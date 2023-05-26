@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>about</title>
+    <!-- slider css link                     -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- link css file                           -->
+    <link rel="stylesheet" href="style.css">
+    <style>
+        :root {
+            --pink: #ef5777;
+            --white: #fff;
+            --black: #222;
+            --transperant-white: rgba(255, 255, 255, .3);
+            --box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, .1);
+        }
+
+        .footer-perant {
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            width: 100%;
+            margin: 0px auto;
+        }
+
+        .footer-child {
+            width: 200px;
+            display: flex;
+            align-items: flex-start;
+            flex-direction: column;
+            justify-content: flex-start;
+            padding: 15px;
+        }
+
+        .footer-child nav ul {
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            flex-direction: column;
+            flex-wrap: wrap;
+            margin-top: 15px;
+        }
+
+        .footer-child nav ul a {
+            color: grey;
+            font-weight: 500;
+            padding: 6px 0px;
+        }
+
+        .footer-child nav ul a:hover {
+            color: var(--pink);
+            text-decoration: underline;
+        }
+
+        #footer-4 {
+            width: 320px;
+        }
+
+        .about {
+            background-color: var(--transperant-white);
+        }
+
+        .about-container img {
+            width: 100%;
+            max-width: 450px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            margin: auto;
+        }
+
+        .about-container img:hover {
+            transform: rotate(360deg);
+            transition: all 1s linear;
+        }
+
+        .about-text {
+            margin: 0px auto;
+            width: 50%;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+            padding: 20px 0px;
+        }
+
+        .about-text h2 {
+            text-align: center;
+            color: var(--black);
+            font-size: 30px;
+        }
+
+        .about-text p {
+            text-align: center;
+            color: grey;
+            padding: 15px 0px;
+            line-height: 1.8rem;
+        }
+
+        .about-text a {
+            padding: 8px 22px;
+            color: var(--black);
+            background-color: var(--transperant-white);
+            border: 1px solid var(--black);
+            border-radius: 5px;
+        }
+
+        .about-text a:hover {
+            color: var(--white);
+            background-color: var(--black);
+            letter-spacing: .1rem;
+        }
+
+        .team h1 {
+            color: var(--black);
+            text-align: center;
+            font-size: 40px;
+            text-transform: uppercase;
+        }
+
+        .team h1 span {
+            text-transform: uppercase;
+            color: var(--pink);
+        }
+
+        .team-perant {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            width: 100%;
+            padding: 20px 0px;
+        }
+
+        .team-child {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            text-align: center;
+            width: 270px;
+            padding: 15px;
+            background-color: rgba(255, 255, 255, .6);
+            box-shadow: var(--box-shadow);
+            margin: 10px;
+            border-radius: 5px;
+        }
+
+        .team-child:hover {
+            transform: scale(1.1);
+
+        }
+
+        .team-child img {
+            width: 130px;
+            border-radius: 50%;
+        }
+
+        .team-child img:hover {
+            transform: scale(1.1);
+
+        }
+
+        .team-child h3 {
+            color: var(--black);
+            padding: 7px;
+        }
+
+        .team-child p {
+            color: var(--pink);
+        }
+
+        .social-icon {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 10px 0px;
+        }
+
+        .social-icon a i {
+            padding: 12px;
+            margin: 3px;
+            background-color: var(--black);
+            border-radius: 5px;
+            font-size: 23px;
+        }
+
+        .social-icon a i:hover {
+            background-color: var(--pink);
+
+        }
+
+        @media(min-width:501px) and (max-width:767px) {
+            #footer-4 {
+                width: 280px;
+            }
+
+            .about-text {
+                width: 90%;
+            }
+        }
+
+        @media(max-width:500px) {
+            .footer-child {
+                display: flex;
+                align-items: flex-start;
+                justify-content: space-between;
+                width: 90%;
+                flex-direction: column;
+            }
+
+            .about-text {
+                width: 90%;
+            }
+
+            .team h1 {
+                color: var(--black);
+                text-align: center;
+                font-size: 30px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+<section class="header">
+    <div class="logo">
+        <a href="index.html"><i class='fas fa-glass-cheers'></i>wedding.</a>
+    </div>
+    <nav>
+        <ul class="navbar">
+            <a href="index.html">home</a>
+            <a href="about.html">about</a>
+            <a href="portfolio.html">portfolio</a>
+            <a href="pricing.html">pricing</a>
+            <a href="contact.html">contact</a>
+        </ul>
+    </nav>
+    <div id="menu-btn" class="fas fa-bars"></div>
+</section>
+    <section class="about">
+        <div class="about-container">
+            <img src="images/about-img.png" alt="">
+        </div>
+        <div class="about-text">
+            <h2>about us</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere quis veritatis assumenda debitis
+                dicta sapiente adipisci autem voluptates ex. Animi ipsum, reprehenderit impedit debitis corporis
+                earum eaque laudantium quam nobis.</p>
+            <a href="contact.php">contact us</a>
+        </div>
+        <div class="team">
+            <h1>our <span>team</span></h1>
+            <div class="team-perant">
+                <div class="team-child">
+                    <img src="images/team-1.jpg" alt="">
+                    <h3>john deo</h3>
+                    <p>wedding planner</p>
+                    <div class="social-icon">
+                        <a href=""><i class='fab fa-facebook'></i></a>
+                        <a href=""><i class='fab fa-twitter'></i></a>
+                        <a href=""><i class='fab fa-instagram'></i></a>
+                        <a href=""><i class='fab fa-github'></i></a>
+                    </div>
+                </div>
+                <div class="team-child">
+                    <img src="images/team-2.jpg" alt="">
+                    <h3>john deo</h3>
+                    <p>wedding planner</p>
+                    <div class="social-icon">
+                        <a href=""><i class='fab fa-facebook'></i></a>
+                        <a href=""><i class='fab fa-twitter'></i></a>
+                        <a href=""><i class='fab fa-instagram'></i></a>
+                        <a href=""><i class='fab fa-github'></i></a>
+                    </div>
+                </div>
+                <div class="team-child">
+                    <img src="images/team-3.jpg" alt="">
+                    <h3>john deo</h3>
+                    <p>wedding planner</p>
+                    <div class="social-icon">
+                        <a href=""><i class='fab fa-facebook'></i></a>
+                        <a href=""><i class='fab fa-twitter'></i></a>
+                        <a href=""><i class='fab fa-instagram'></i></a>
+                        <a href=""><i class='fab fa-github'></i></a>
+                    </div>
+                </div>
+                <div class="team-child">
+                    <img src="images/team-4.jpg" alt="">
+                    <h3>john deo</h3>
+                    <p>wedding planner</p>
+                    <div class="social-icon">
+                        <a href=""><i class='fab fa-facebook'></i></a>
+                        <a href=""><i class='fab fa-twitter'></i></a>
+                        <a href=""><i class='fab fa-instagram'></i></a>
+                        <a href=""><i class='fab fa-github'></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="footer">
+    <div class="footer-perant">
+        <div class="footer-child">
+            <h2>quick links</h2>
+            <nav>
+                <ul>
+                    <a href="home.php"><i class='fas fa-angle-right'></i>home</a>
+                    <a href="about.php"><i class='fas fa-angle-right'></i>about</a>
+                    <a href="portfolio.php"><i class='fas fa-angle-right'></i>portfolio</a>
+                    <a href="pricing.php"><i class='fas fa-angle-right'></i>pricing</a>
+                    <a href="contact.php"><i class='fas fa-angle-right'></i>contact</a>
+                </ul>
+            </nav>
+        </div>
+        <div class="footer-child">
+            <h2>extra links</h2>
+            <nav>
+                <ul>
+                    <a href="home.php"><i class='fas fa-angle-right'></i>plan wedding</a>
+                    <a href="about.php"><i class='fas fa-angle-right'></i>our services</a>
+                    <a href="portfolio.php"><i class='fas fa-angle-right'></i>ask question</a>
+                    <a href="pricing.php"><i class='fas fa-angle-right'></i>terms of use</a>
+                    <a href="contact.php"><i class='fas fa-angle-right'></i>privicy policy</a>
+                </ul>
+            </nav>
+        </div>
+        <div class="footer-child">
+            <h2>follow us</h2>
+            <nav>
+                <ul>
+                    <a href=""><i class='fab fa-facebook'></i>facebook</a>
+                    <a href=""><i class='fab fa-twitter'></i>twitter</a>
+                    <a href=""><i class='fab fa-google'></i>goodle</a>
+                    <a href=""><i class='fab fa-instagram'></i>instagram</a>
+                    <a href=""><i class='fab fa-github'></i>github</a>
+                </ul>
+            </nav>
+        </div>
+        <div class="footer-child" id="footer-4">
+            <h2>contact info</h2>
+            <nav>
+                <ul>
+                    <a href=""><i class='fas fa-phone'></i>+92 307 4411028</a>
+                    <a href=""><i class='fas fa-phone'></i>+92 309 1434600</a>
+                    <a href=""><i class='fas fa-mail-bulk'></i>naveedkasuri235@gmail.com</a>
+                    <a href=""><i class='fas fa-mail-bulk'></i>mnaveedgr2468@gmail.com</a>
+                    <a href=""><i class='fas fa-map'></i>kasur,pakistan.54000</a>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <hr class="hr">
+    <div class="tagline">create by <span>mnaveedgr </span>| all rights reserved!</div>
+</section>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <!-- custom js link -->
+    <script src="wedding.js"></script>
+</body>
+
+</html>
